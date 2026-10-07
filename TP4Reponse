@@ -1,14 +1,18 @@
-Part A :
+Partie A :
     Question 1 :
-        Annomalie 1 :
-            Action : Option 3 du menu on peu indiquer un nombre négatif ce qui ne devrait pas être permis (Exemple: saisie = -4)
-            Comportement observé : Renvoie tous les salaire supeieur à -4
-            Comportement souhaité : Message 'Entrer non valide'
+        Anomalie 1 :
+            Action : Option 3 du menu on peut indiquer un nombre négatif, ce qui ne devrait pas être permis (exemple : saisie = -4).
+            Comportement observé : Renvoie tous les salaires supérieurs à -4.
+            Comportement souhaité : Message « Entrée non valide ».
 
-        Annomalie 2 :
-            Action : mettre un salaire négatif dans les DonneesDemo
-            Comportement observé : le programmeur est créé avec un salaire négatif et consultable dans le menu
-            Comportement souhaité : Que le programmeur ne soit pas crée et ainsi pas consultable dans le menu
+            Anomalie 2 :
+            Action : Mettre un salaire négatif dans les DonneesDemo.
+            Comportement observé : Le programmeur est créé avec un salaire négatif et est consultable dans le menu.
+            Comportement souhaité : Que le programmeur ne soit pas créé et, ainsi, pas consultable dans le menu.
 
     Question 2 :
 
+    Question 3 :
+        Déclarer une bibliothèque directement dans le pom.xml permet d'indiquer à Maven quoi aller chercher, ce qui permet de ne pas avoir à télécharger un fichier .jar dans notre projet puisque, dans le cas où quelqu'un récupère le code, Maven lira simplement ce dont il a besoin dans le pom.xml.
+
+    Question 4 :
