@@ -29,7 +29,7 @@ public class Annuaire {
      */
     public boolean ajouter(Collaborateur collaborateur) {
         if (collaborateurs.containsKey(collaborateur.getIdentifiant())) {
-            return false;
+            throw new CollaborateurDejaExistantException(collaborateur.getIdentifiant());
         }
         collaborateurs.put(collaborateur.getIdentifiant(), collaborateur);
         return true;

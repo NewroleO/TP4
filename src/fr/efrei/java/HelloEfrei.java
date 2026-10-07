@@ -16,10 +16,17 @@ public class HelloEfrei {
     public static void main(String[] args) {
 
         // --- Initialisation de l'annuaire avec les données de démonstration ---
-        Annuaire annuaire = new Annuaire();
-        for (Collaborateur c : DonneesDemo.creerCollaborateurs()) {
-            annuaire.ajouter(c);
+        Annuaire annuaire = null;
+        try {
+            annuaire = new Annuaire();
+            for (Collaborateur c : DonneesDemo.creerCollaborateurs()) {
+                annuaire.ajouter(c);
+            }
+        } catch (CollaborateurDejaExistantException e) {
+            String idRep = e.id();
+            System.err.println("Un utilisateur qui possède déjà cette l'identifant : " + idRep);
         }
+
 
         Scanner scanner = new Scanner(System.in);
         int choix = -1;
