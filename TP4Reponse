@@ -1,3 +1,9 @@
 Part A :
     Question 1 :
+        Annomalie 1 : Option 3 du menu on peu indiquer un nombre négatif ce qui ne devrait pas être permis
+            Exemple : -4
+                Renvoie tous les salire supeieur à -4
+
+                Resultat attendue : Message 'Entrer non valide'
+
 
