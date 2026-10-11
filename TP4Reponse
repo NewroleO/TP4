@@ -88,4 +88,20 @@ Partie B :
 
 Partie C :
     Missions 10 et 11 :
-        Elles ne sont pas documentées ici comme réalisées. Il reste à suivre les consignes du TP pour la génération par IntelliJ et le bilan, puis à ajouter les observations réelles dans cette réponse.
+        10 : Les 2 classes sont sensiblement pareil, que se loit le choit sur la primaire que sur les type, enfin petite particularité certaine collone comme adresse n'y sont pas présnte car la classe Collaborateur à été modifié, je peux aussi noter que les getter et setter sont présent pour chaque attribue.
+        (Je ne mentionne pas les differences sur la présence de certaines fonction et constructeure qui sont le vestige d'ancien TP)
+
+       11 :
+        Vérifiez que :
+
+        Le projet se construit avec Maven. : Ok
+        Une règle métier importante est protégée par une exception précise. : Ok
+        Les exceptions ne sont pas avalées. : Ok
+        Vous savez diagnostiquer un problème avec le debugger. : Ok
+        Les logs restent techniques. : Ok
+        Une entité est persistée puis retrouvée.: Ok
+        Une modification d’entité gérée est synchronisée. : Ok
+        Une requête JPQL fonctionne. : Ok
+        La relation avec Adresse est comprise. : Ok
+        Vous savez expliquer les limites d’une clé comme C001. : Ok
+        HelloEfrei ne concentre pas toute la logique. : OK

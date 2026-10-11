@@ -11,8 +11,9 @@
     <class>Programmeur</class>
     <class>Testeur</class>
     <class>Adresse</class>
+      <class>fr.efrei.collaborateurs.genere.CollaborateurDemo</class>
 
-    <properties>
+      <properties>
       <property name="jakarta.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
       <property name="jakarta.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/efrei_tp4"/>
       <property name="jakarta.persistence.jdbc.user" value="root"/>
