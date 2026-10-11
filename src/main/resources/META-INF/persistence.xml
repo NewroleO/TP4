@@ -10,6 +10,7 @@
     <class>Collaborateur</class>
     <class>Programmeur</class>
     <class>Testeur</class>
+    <class>Adresse</class>
 
     <properties>
       <property name="jakarta.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
