@@ -2,6 +2,7 @@ package fr.efrei.collaborateurs.modele;
 
 import jakarta.persistence.*;
 
+
 /**
  * depuis le TP2, Adresse était déjà une classe. Pour devenir une Entity elle gagne
  * un identifiant technique, un constructeur sans argument et des annotations.
