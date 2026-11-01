@@ -1,15 +1,18 @@
 package fr.efrei.collaborateurs;
 
 import fr.efrei.collaborateurs.service.CollaborateurService;
+import fr.efrei.collaborateurs.service.TicketService;
 import fr.efrei.collaborateurs.ui.ConsoleApp;
+import jakarta.persistence.EntityManagerFactory;
 
-/** Point d'entrée : il assemble les morceaux, rien de plus. */
 public class HelloEfrei {
 
     public static void main(String[] args) {
-        CollaborateurService service = new CollaborateurService(JpaUtil.initEMFactory());
+        EntityManagerFactory emf = JpaUtil.initEMFactory();
         try {
-            new ConsoleApp(service).lancer();
+            CollaborateurService collabService = new CollaborateurService(emf);
+            TicketService ticketService = new TicketService(emf);
+            new ConsoleApp(collabService, ticketService).lancer();
         } finally {
             JpaUtil.fermerEMFactory();
         }
